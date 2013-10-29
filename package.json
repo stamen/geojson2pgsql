@@ -1,0 +1,20 @@
+{
+  "name": "geojson2pgsql",
+  "version": "0.0.0",
+  "description": "Import GeoJSON into PostgreSQL",
+  "bin": "bin/geojson2pgsql.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stamen/geojson2pgsql.git"
+  },
+  "author": "Seth Fitzsimmons <seth@mojodna.net>",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/stamen/geojson2pgsql/issues"
+  },
+  "dependencies": {
+    "require-env": "0.0.3",
+    "pg": "~2.8.2",
+    "optimist": "~0.6.0"
+  }
+}
