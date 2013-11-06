@@ -48,6 +48,9 @@ var getDimensionality = function(geometry) {
   case "LineString":
     return geometry.coordinates[0].length;
 
+  case "Point":
+    return geometry.coordinates.length;
+
   default:
     throw new Error("Unsupported GeoJSON geometry type: " + geometry.type);
   }
@@ -78,6 +81,9 @@ var asWKT = function(geometry, srid) {
     return util.format("SRID=%d;LINESTRING(%s)", srid, geometry.coordinates.map(function(x) {
       return x.join(" ");
     }).join(","));
+
+  case "Point":
+    return util.format("SRID=%d;Point(%s)", srid, geometry.coordinates.join(" "));
 
   default:
     throw new Error("Unsupported GeoJSON geometry type: " + geometry.type);
