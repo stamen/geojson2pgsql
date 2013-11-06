@@ -1,6 +1,6 @@
 {
   "name": "geojson2pgsql",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Import GeoJSON into PostgreSQL",
   "bin": "bin/geojson2pgsql.js",
   "repository": {
