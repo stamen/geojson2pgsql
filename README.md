@@ -22,3 +22,8 @@ psql -d json-test -c "select json_object_keys(properties) from data"
 ## Environment Variables
 
 * `DATABASE_URL` - Postgres connection info. Required.
+
+## Limitations
+
+* Only supports `Point`s
+* Presumably other things
